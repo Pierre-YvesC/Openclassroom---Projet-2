@@ -6,20 +6,18 @@
             <title>Reservia</title>
             <link rel="stylesheet" href="Style.css"/>
         </head>
-
         <body>
         <!-- 2.test   logo de l'entreprise (en haut à gauche) et navigation - flexbox image et navigation - flexbox navigation -->
-            <header class="barreNavigation">
-                    <img class="logoReservia" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
-                    <nav>
-                        <ul class="autreMenu">
-                            <li class="hebergement">Hébergement</li>
-                            <li class="activites">Activités</li>
-                            <li class="sinscrire">S'inscrire</li>
-                        </ul>
-                        </nav>
+            <header>
+                <img class="logoReservia" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
+                <nav>    
+                    <ul class="autreMenu">
+                        <li><a href="#">Hébergement</a></li>
+                        <li><a href="#">Activités</a></li>
+                        <li><a href="#">S'inscrire</a></li>
+                    </ul>
+                </nav>
             </header>
-
         <!--  3. premier bloc de contenu : texte + filtres-->
         <!-- text premier block -->
             <section>
@@ -28,6 +26,7 @@
                     <p class="sousTitre">En plein centre ville ou en pleine nature</p>
                 </div>
                 <div>
+                    <img src="#" alt="icone de localisation"/>
                     <input type="search" id="maRecherche" name="q"
                     placeholder="Marseille, France" spellcheck="true"> 
                     <button>Rechercher</button> 
@@ -50,16 +49,18 @@
 
         <!--  4. première section(haut-gauche) : les hébergements-->
             <div class="sectionsCentrePage">
-                <div class="listDesHebergements">
-                            <p>Hébergement à Marseille</p>
+                <section class="Permieresection">
+                    <p>Hébergement à Marseille</p>
+                    <div class="listDesHebergements">
                             <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logement 1" class="hebergementMarseille"/>
                             <img src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logement 2" class="hebergementMarseille"/>
                             <img src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logement 3" class="hebergementMarseille"/>
                             <img src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logement 4" class="hebergementMarseille"/>
                             <img src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logement 5" class="hebergementMarseille"/>
                             <img src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Logement 6" class="hebergementMarseille"/>
-                            <p>Afficher plus</p>
-                </div>
+                    </div>
+                    <p>Afficher plus</p>
+                </section>
                 <div class="lesPlusPopulaires">
                     <div class="titreEtLogo">
                         <p>Les plus populaires</p>

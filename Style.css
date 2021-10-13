@@ -4,58 +4,72 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 /* haut de page - espace de navigation*/
-.barreNavigation
+header 
 {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    border: 100px;
+    display:flex;
     justify-content: space-between;
+    align-items:center;
+    padding: 30px;
 }
 /* haut de page - logo*/
-
 .logoReservia
 {
     width: 10%;
 }
 /* haut droit - autres éléments de navigation*/
+/* gestion en flex des éléments */
 .autreMenu
 {
    display: flex;
-   flex-direction: row;
-   width: 500px;
-   justify-content: space-between;
    list-style: none;
+   justify-content: space-between;
    align-items: center;
+   padding: 100%, 40px;
+
 }
 
+/* gestion des boutons de navigation */
 .hebergement
 {
     display: flex;
-    flex: 1;
     justify-content: space-around;
-    color: blue;
+    color:black;
     font-size: 14px;
     margin: 5px;
-    
+    background-color: rgb(105, 63, 33);
+}
+.hebergement:hover
+{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgb(0, 101, 252);
+    color:rgb(0, 101, 252);
+    font-size: 14px;
+    margin: 5px;
 }
 
 .activites
 {
     display: flex;
-    flex: 1;
     justify-content: space-around;
     color:black;
     font-size: 14px;
     margin: 5px;
  }
- 
+ .activites:hover
+{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgb(0, 101, 252);
+    color:rgb(0, 101, 252);
+    font-size: 14px;
+    margin: 5px;
+}
  .sinscrire
  {
      display: flex;
-     flex: 1;
-     justify-content: space-around;
-     color:blue;
+    justify-content: space-around;
+     color: rgb(0, 101, 252);
      font-weight: bold;
      font-size: 14px;
      margin: 5px;
