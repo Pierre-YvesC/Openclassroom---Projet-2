@@ -7,68 +7,149 @@
             <link rel="stylesheet" href="Style.css"/>
         </head>
         <body>
-        <!-- 2.test   logo de l'entreprise (en haut à gauche) et navigation - flexbox image et navigation - flexbox navigation -->
+<!-- 2. logo de l'entreprise (en haut à gauche) et navigation - flexbox image et navigation - flexbox navigation -->
             <header>
                 <img class="logoReservia" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
-                <nav>    
+                <nav>
                     <ul class="autreMenu">
-                        <li><a href="#">Hébergement</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><a href="#">S'inscrire</a></li>
+                        <li><a href="#" class="sousMenu1">Hébergement</a></li>
+                        <li><a href="#" class="sousMenu2">Activités</a></li>
+                        <li><a href="#" class="sousMenu3">S'inscrire</a></li>
                     </ul>
                 </nav>
             </header>
-        <!--  3. premier bloc de contenu : texte + filtres-->
-        <!-- text premier block -->
+<!--  3. premier bloc de contenu : texte + filtres-->
+    <!-- text premier block -->
             <section>
                 <div class="accroche">
                     <p>Trouver un hébergement pour des vacances de rêve</p>
                     <p class="sousTitre">En plein centre ville ou en pleine nature</p>
                 </div>
-                <div>
-                    <img src="#" alt="icone de localisation"/>
-                    <input type="search" id="maRecherche" name="q"
-                    placeholder="Marseille, France" spellcheck="true"> 
-                    <button>Rechercher</button> 
+    <!-- Bouton de recherche de ville -->
+                <div class="boutonRecherche">
+                    <img src="images\logo\Logo-Localisation.png" alt="iconeDeLocalisation" class="iconeLocalisation"/>
+                    <input type="search" id="maRecherche" name="q" placeholder="Marseille, France" spellcheck="true"> 
+                    <button class="boutonRecherche2">Rechercher</button> 
                 </div>
-        <!-- filtres premier bloc -->
+<!-- 4. les filtres economique, familiale, romantique... -->
                 <div class="filtres">
                     <p class="textFiltres">Filtres</p>
-                    <button><img src="images\logo\Logo-Billet.png" alt="Un billet de banque" class="logoBouton"><span>Economique</span></button>
-                    <button><img src="images\logo\Logo-personne.png" alt="Une personne" class="logoBouton"><span>Familial</span></button>
-                    <button><img src="images\logo\Logo-coeur.png" alt="Un coeur" class="logoBouton"><span>Romantique</span></button>
-                    <button><img src="images\logo\Logo-dog.png" alt="Un chien" class="logoBouton"><span>Animaux autorisés</span></button>
+    <!-- filtres economique-->              
+                    <div class="filtreEconomique">
+                        <img src="images\logo\Logo-Billet.png" alt="Un billet de banque" class="logoFiltre1">
+                        <a href="#" class="boutonEconomique"><button class="boutonEconomique">Économique</button></a>
+                    </div>
+    <!-- filtres familial--> 
+                    <div class="filtreFamilial">
+                        <img src="images\logo\Logo-personne.png" alt="Une personne" class="logoFiltre2">
+                        <a href="#" class="boutonFamilial"><button class="boutonFamilial">Familial</button></a>
+                    </div>
+    <!-- filtres romantique-->
+                    <div class="filtreRomantique">
+                        <img src="images\logo\Logo-coeur.png" alt="Un coeur" class="logoFiltre3">
+                        <a href="#" class="boutonRomantique"><button class="boutonRomantique">Romantique</button></a>
+                    </div>
+    <!-- filtres animaux-->
+                    <div class="filtreAnimaux">
+                        <img src="images\logo\Logo-dog.png" alt="Un chien" class="logoFiltre4">
+                        <a href="#" class="boutonAnimaux"><button class="boutonAnimaux">Animaux autorisés</button></a>
+                    </div>
                 </div> 
-        <!-- information --> 
+<!-- Petit texte d'information --> 
                 <div class="information">
                     <img src="images\logo\Logo-information.png" alt="Un point d'exclamation entouré" class="imageInformation">    
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <p class="trouverLogements">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
            
             </section>
 
-        <!--  4. première section(haut-gauche) : les hébergements-->
+<!--  4. première grande section(centre-gauche) : les hébergements-->
             <div class="sectionsCentrePage">
-                <section class="Permieresection">
-                    <p>Hébergement à Marseille</p>
-                    <div class="listDesHebergements">
-                            <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logement 1" class="hebergementMarseille"/>
-                            <img src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logement 2" class="hebergementMarseille"/>
-                            <img src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logement 3" class="hebergementMarseille"/>
-                            <img src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logement 4" class="hebergementMarseille"/>
-                            <img src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logement 5" class="hebergementMarseille"/>
-                            <img src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Logement 6" class="hebergementMarseille"/>
-                    </div>
-                    <p>Afficher plus</p>
-                </section>
+                <section class="premierBlockHebergement">
+                    <p class="textBloc">Hébergement à Marseille</p>
+                        <div class="listDesHebergements">
+                            <div class="aubergeLaCannebiere">
+                                <a href="#">
+                                <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logement 1" class="imageVille"/>
+                                <p class="premierTitre">Auberge la cannebière</p>
+                                <p class="secondTitre">Nuit à partir de 25€</p>
+                                <img src="images\logo\4Etoiles.png" alt="4 Etoiles" class="Etoiles"/>
+                                </a>
+                            </div>
+                            <div class="hotelDuPort">
+                                <a href="#">
+                                <img src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logement 2" class="imageVille"/>
+                                <p class="premierTitre">Hôtel du port</p>
+                                <p class="secondTitre">Nuit à partir de 52€</p>
+                                <img src="images\logo\5Etoiles.png" alt="5 Etoiles" class="Etoiles"/>
+                                </a>
+                            </div>
+                            <div class="hotelLesMouettes">
+                                <a href="#">
+                                <img src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logement 3" class="imageVille"/>
+                                <p class="premierTitre">Hôtel Les mouettes</p>
+                                <p class="secondTitre">Nuit à partir de 76€</p>
+                                <img src="images\logo\4Etoiles.png" alt="4 Etoiles" class="Etoiles"/>
+                                </a>
+                            </div>
+                            <div class="hotelDeLaMer">
+                                <a href="#">
+                                <img src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logement 4" class="imageVille"/>
+                                <p class="premierTitre">Hôtel de la mer</p>
+                                <p class="secondTitre">Nuit à partir de 46€</p>
+                                <img src="images\logo\3Etoiles.png" alt="3 Etoiles" class="Etoiles"/>
+                                </a>
+                            </div>                            
+                            <div class="aubergeLePanier">
+                                <a href="#">
+                                <img src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logement 5" class="imageVille"/>
+                                <p class="premierTitre">Auberge Le Panier</p>
+                                <p class="secondTitre">Nuit à partir de 23€</p>
+                                <img src="images\logo\4Etoiles.png" alt="4 Etoiles" class="Etoiles"/>
+                                </a>
+                            </div>                            
+                            <div class="hotelChezAmina">
+                                <a href="#">
+                                <img src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Logement 6" class="imageVille"/>
+                                <p class="premierTitre">Hôtel chez Amina</p>
+                                <p class="secondTitre">Nuit à partir de 96€</p>
+                                <img src="images\logo\5Etoiles.png" alt="5 Etoiles" class="Etoiles"/>
+                                </a>
+                            </div>                            
+                        </div>
+                    <p class="textBloc2">Afficher plus</p>
+                    </section>
                 <div class="lesPlusPopulaires">
-                    <div class="titreEtLogo">
-                        <p>Les plus populaires</p>
+                    <div class="titreEtLogoPopulaires">
+                        <p class="textBloc">Les plus populaires</p>
                         <img src="images\logo\Logo-trend.png" alt="Logo trends" class="logoTrend">
                     </div>
-                    <img src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Logement 7" class="hebergementMarseille" />
-                    <img src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Logement 8" class="hebergementMarseille" />
-                    <img src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Logement 9" class="hebergementMarseille"/>
+                    <div class="hotelLeSoleilDuMatin">
+                        <a href="#">
+                        <img src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Logement 3" class="imageVille2"/>
+                        <div class="textIntermédiaire">
+                            <p class="premierTitre">Hotel Le soleil du matin</p>
+                            <p class="secondTitre">Nuit à partir de 128€</p>
+                            <img src="images\logo\5Etoiles.png" alt="5 Etoiles" class="Etoiles"/>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="auCoeurDeLeauChambreDhotes">
+                        <a href="#">
+                        <img src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Logement 4" class="imageVille2"/>
+                        <p class="premierTitre">Au coeur de l'eau Chambres d'hôtes</p>
+                        <p class="secondTitre">Nuit à partir de 71€</p>
+                        <img src="images\logo\4Etoiles.png" alt="4 Etoiles" class="Etoiles"/>
+                        </a>
+                    </div>
+                    <div class="hotelToutBleuEtBlanc">
+                        <a href="#">
+                        <img src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Logement 4" class="imageVille2"/>
+                        <p class="premierTitre">Hôtel Tout bleu et Blanc</p>
+                        <p class="secondTitre">Nuit à partir de 68€</p>
+                        <img src="images\logo\4Etoiles.png" alt="4 Etoiles" class="Etoiles"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         <!--  6. troisième section : les activités-->

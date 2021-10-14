@@ -1,173 +1,337 @@
-/* global - police du document */
+/*                                               global - police du document */
 *
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
-/* haut de page - espace de navigation*/
-header 
-{
-    display:flex;
+/*                  A reprendre                haut de page - espace de navigation*/
+header{
+    display: flex;
     justify-content: space-between;
-    align-items:center;
-    padding: 30px;
+    height: 100px;
+    align-items: center;
 }
-/* haut de page - logo*/
-.logoReservia
-{
-    width: 10%;
+.logoReservia{
+    height: 50px;
+    padding-left: 50px;
 }
-/* haut droit - autres éléments de navigation*/
-/* gestion en flex des éléments */
-.autreMenu
-{
-   display: flex;
-   list-style: none;
-   justify-content: space-between;
-   align-items: center;
-   padding: 100%, 40px;
-
+.autreMenu{
+    display: flex;
+    height: 100px;
+    width: 300px;
+    padding-right: 100px;
+    list-style: none;
+    padding-top: 70px;
+    justify-content: space-between;
 }
-
-/* gestion des boutons de navigation */
-.hebergement
-{
+/*                                                ???? comment mettre une barre au dessus d'un titre en hover ???? */
+.sousMenu1{
     display: flex;
     justify-content: space-around;
     color:black;
-    font-size: 14px;
-    margin: 5px;
-    background-color: rgb(105, 63, 33);
+    font-size: 16px;
+    text-decoration: none;
 }
-.hebergement:hover
-{
-    display: flex;
+.sousMenu1:hover{
+    display: block;
     justify-content: space-around;
-    border-top: 1px solid rgb(0, 101, 252);
     color:rgb(0, 101, 252);
-    font-size: 14px;
-    margin: 5px;
+    font-size: 16px;
+    text-decoration: none;
 }
-
-.activites
-{
+.sousMenu2{
     display: flex;
     justify-content: space-around;
     color:black;
-    font-size: 14px;
-    margin: 5px;
- }
- .activites:hover
-{
+    font-size: 16px;
+    text-decoration: none;
+}
+.sousMenu3{
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid rgb(0, 101, 252);
     color:rgb(0, 101, 252);
-    font-size: 14px;
-    margin: 5px;
-}
- .sinscrire
- {
-     display: flex;
-    justify-content: space-around;
-     color: rgb(0, 101, 252);
-     font-weight: bold;
-     font-size: 14px;
-     margin: 5px;
-     
-  }
- 
-
-/* centre-haut - Texte d'introduction*/
-.accroche
-{
-    padding-top: 20px;
     font-weight: bold;
     font-size: 16px;
+    text-decoration: none;
+}   
+/*                Finalisé                     centre-haut - Texte d'introduction : Trouver un hébergement...*/
+.accroche
+{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 50px;
+    line-height: 5px;
 }
 .sousTitre
 {
-    font-size: 14Px;
-    padding-top: 0px;
+    font-size: 16Px;
     padding-bottom: 20px;
     font-weight: normal;
+    line-height: 5px;
 }
 
-/*centre-haut - filtres*/
+/*                                        centre-haut - bouton de recherche de ville avec icone zone de texte*/
+.boutonRecherche{
+    display: flex;
+    height: 30px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding: 40px;
+}
+.iconeLocalisation{
+    height: 30px;
+    border-radius: 100px 0px 0px 100px;
+    background-color: rgb(0, 101, 252);
+}
+.boutonRecherche2{
+    height: 30px;
+    border-radius: 0px 100px 100px 0px;
+    background-color: rgb(0, 101, 252);
+    color: white;
+    border: none;
+}
+/*                                       centre-haut - filtres Economique, familiale...*/
 .filtres
 {
     display: flex;
-    padding-top: 20px;
-    padding-bottom:20px;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
 }
-
-.logoBouton
-{
-    width: 40px;
-    height: 40px;
-}
-
+/* texte filtre*/
 .textFiltres
 {
     font-weight: bold;
 }
-/*centre-haut - information*/
-.information 
+/* filtre économique                      ???? comment rendre les boutons plus esthétiques : centrer le texte dans le bouton*/
+.filtreEconomique
 {
     display: flex;
-    justify-content: left;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100px 100px 100px 100px;
+    border-style: ridge;
 }
+.logoFiltre1
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px 100px 100px 100px;
+    border-style: none;
+    background-color: lightblue;
+}
+.boutonEconomique{
+    height: 20px;
+    border-radius: 0px 100px 100px 0px;
+    border-style: none;
+    background-color: white;
+}
+/* filtre familial*/
+.filtreFamilial
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100px 100px 100px 100px;
+    border-style: ridge;
+}
+.logoFiltre2
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px 100px 100px 100px;
+    border-style: none;
+    background-color: lightblue;
+}
+.boutonFamilial{
+    height: 20px;
+    border-radius: 0px 100px 100px 0px;
+    border-style: none;
+    background-color: white;
+}
+/* filtre Romantique*/
+.filtreRomantique
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100px 100px 100px 100px;
+    border-style: ridge;
+}
+.logoFiltre3
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px 100px 100px 100px;
+    border-style: none;
+    background-color: lightblue;
+}
+.boutonRomantique{
+    height: 20px;
+    border-radius: 0px 100px 100px 0px;
+    border-style: none;
+    background-color: white;
+}
+/* filtre Animaux*/
+.filtreAnimaux
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100px 100px 100px 100px;
+    border-style: ridge;
+}
+.logoFiltre4
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px 100px 100px 100px;
+    border-style: none;
+    background-color: lightblue;
+}
+.boutonAnimaux{
+    height: 20px;
+    border-radius: 0px 100px 100px 0px;
+    border-style: none;
+    background-color: white;
+}
+/*                   Finalisé                centre-haut - information*/
 .imageInformation 
 {
     width: 20px;
     height: 20px;
 }
+.information 
+{
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+}
+.trouverLogements
+{
+    margin-left: 10px;
+}
 
-/*centre - taille des images*/
+/*                                               centre - taille des images*/
 .hebergementMarseille
 {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     justify-content: space-evenly;
+    padding: 10px;
 }
-/*centre gauche - les hébergements proposés */
-.sectionsCentrePage
-{
+/*                 ??? comment gérer la répartition de l'espace entre les blocs                              centre gauche - les hébergements proposés */
+/* l'organisation des deux sections */
+.sectionsCentrePage{
     display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
 }
 
-.listeDesHebergements
-{
-   display: flex;
-   justify-content: space-around;  
-   flex-wrap: wrap;  
-   flex-grow: 3;
+/*  le fond de la section gauche*/
+.premierBlockHebergement{
+    background-color: silver;
+    border-radius: 30px 30px 30px 30px;
+    width: 70%;
 }
-
-/*centre droit - les hébergements proposés - les plus populaires*/
-.lesPlusPopulaires
-{
+.listDesHebergements{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.aubergeLaCannebiere, .hotelDuPort, .hotelLesMouettes, .hotelDeLaMer, .aubergeLePanier, .hotelChezAmina{
+    display: flex;
+    border-radius: 30px 30px 30px 30px;
+    background-color: white;
     flex-direction: column;
-    flex-grow: 1;
+    margin: 10px;
+    padding: 5px;
+    height: 200px;
+    width: 230px;
+    box-shadow: 1px 1px 1px 1px;
+}
+.premierTitre{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    line-height: 2px;
+}
+.Etoiles{
+    height: 10px;
+    padding: 0%;
+    }
+.secondTitre{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    line-height: 5px;
+}
+.imageVille{
+    border-radius: 30px 30px 0px 0px;
+    height: 110px;
+    width: 100%;
+}
+.textBloc{
+    padding-left: 20px;
+    font-weight: bold;
+}
+.textBloc2{
+    padding-left: 20px;
+}
+/*                                               centre droit - les hébergements proposés - les plus populaires*/
+/*  le fond de la section droite*/
+.lesPlusPopulaires{
+    display: flex;
+    background-color: silver;
+    padding: 5px;
+    margin:5px;
+    border-radius: 30px 30px 30px 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-around;
+}
+.titreEtLogoPopulaires{
+    display: flex;
+    justify-content: space-between;
 }
 .logoTrend
 {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
 }
 .titreEtLogo
 {
     display: flex;
 }
-/*pied de page - flexbox pour la gestion des 3 blocks */
+.hotelLeSoleilDuMatin, .auCoeurDeLeauChambreDhotes, .hotelToutBleuEtBlanc{
+    flex: display;
+    height: 120px;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+
+}
+.imageVille2{
+    border-radius: 30px 0px 0px 30px;
+    height: 100%;
+    width: 150px;
+}
+/*                                               pied de page - flexbox pour la gestion des 3 blocks */
 .piedPage
 {
     display: flex;
     justify-content: space-around;
     background-color: silver;
-    /*ne fonctionne pas, obligé de passer par une suppression des points individuels :*/
+
+/*                                               ne fonctionne pas, obligé de passer par une suppression des points individuels :*/
     list-style: none;
 }
 
